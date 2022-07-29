@@ -1,0 +1,12 @@
+// Creer une projet template web
+dotnet new web -n LibraryAPI
+// Creer une projet template xunit
+dotnet new xunit -n LibraryAPI.Tests
+
+dotnet new sln --name LibraryAPISolution
+
+dotnet sln LibraryAPISolution.sln add src/LibraryAPI/LibraryAPI.csproj test/LibraryAPI.Tests/LibraryAPI.Tests.csproj
+
+dotnet add test/LibraryAPI.Tests/LibraryAPI.Tests.csproj reference src/LibraryAPI/LibraryAPI.csproj
+
+dotnet build
