@@ -33,3 +33,5 @@ msbuild.wrn
 *.exe
 *.o
 *.so
+src/LibraryAPI/bin/
+src/LibraryAPI/obj/
